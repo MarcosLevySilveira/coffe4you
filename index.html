@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Coffee4You - Your Global Coffee Destination</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div>
+            <img src="./img/logo.png" alt="Coffee4You Logo">
+        </div>
+    </header>
+
+    <!-- Add padding to the body to prevent content from being hidden behind the fixed header -->
+    <div style="padding-top: 0px;">
+
+        <!-- Homepage -->
+        <section class="image-container">
+            <img src="./img/firstImage.png" alt="Coffee4You - Global Coffee Journey" class="welcome-image">
+            <div class="email-box">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Stay updated on the latest coffee trends and promotions.</p>
+                <form>
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+
+        </section>
+
+        <section class="image-slider">
+            <h2>Top 10 products</h2>
+            <div class="slider">
+                <img src="./img/coffe1.png" alt="Image 1">
+                <img src="./img/coffe2.png" alt="Image 2">
+                <img src="./img/coffe3.png" alt="Image 3">
+                <img src="./img/coffe4.jpg" alt="Image 4">
+                <img src="./img/coffe5.jpg" alt="Image 5">
+            </div>
+            <div class="navigation-button">
+                <button onclick="changeSlide(-1)">Previous</button>
+                <button onclick="changeSlide(1)">Next</button>
+            </div>
+        </section>
+        </section>
+
+        <!-- About Page -->
+        <section>
+            <h1>About Coffee4You</h1>
+            <p>Coffee4You is a haven for coffee enthusiasts, bringing the finest coffee beans from various countries.
+                Our mission is to provide an immersive coffee experience like no other.</p>
+            <a href="contact.html">Contact Us</a>
+        </section>
+
+        <!-- Product Page -->
+        <section>
+            <h1>Explore Global Flavors</h1>
+            <p>Indulge in the rich and unique flavors of coffees sourced from diverse regions. Each cup tells a story of
+                craftsmanship and passion.</p>
+            <a href="contact.html">Contact Us</a>
+        </section>
+
+        <!-- Contact Page -->
+        <section>
+            <h1>Contact Coffee4You</h1>
+            <p>Reach out to us for inquiries, recommendations, or to share your coffee experiences. We'd love to connect
+                with fellow coffee lovers!</p>
+            <form>
+                <!-- Add your contact form fields here -->
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Coffee4You. All rights reserved.</p>
+        <address>
+            Coffee4You, 123 Global Brew Avenue, Bean City, Roastland, 98765<br>
+            Phone: (555) 123-4567 | Email: info@coffee4you.com
+        </address>
+    </footer>
+    <script src="./js/addToCart.js"></script>
+</body>
+
+</html>
