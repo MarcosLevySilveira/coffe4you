@@ -25,11 +25,11 @@
         </div>
     </header>
 
-    <!-- Add padding to the body to prevent content from being hidden behind the fixed header -->
-    <div style="padding-top: 0px;">
+    <!-- Container for the rest of the content -->
+    <div class="content-container">
 
         <!-- Homepage -->
-        <section class="image-container">
+        <section class="container20 image-container">
             <img src="./img/firstImage.png" alt="Coffee4You - Global Coffee Journey" class="welcome-image">
             <div class="email-box">
                 <h2>Subscribe to Our Newsletter</h2>
@@ -39,27 +39,106 @@
                     <button type="submit">Subscribe</button>
                 </form>
             </div>
-
         </section>
 
-        <section class="image-slider">
-            <h2>Top 10 products</h2>
-            <div class="slider">
-                <img src="./img/coffe1.png" alt="Image 1">
-                <img src="./img/coffe2.png" alt="Image 2">
-                <img src="./img/coffe3.png" alt="Image 3">
-                <img src="./img/coffe4.jpg" alt="Image 4">
-                <img src="./img/coffe5.jpg" alt="Image 5">
+        <div id="product-container">
+            <h1>Top 10 Products</h1>
+            <div class="product" id="product1">
+                <img src="./img/coffe1.png" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$19.99</p>
+                <label for="quantity1">Quantity:</label>
+                <input type="number" id="quantity1" value="1" min="1">
+                <button onclick="addToCart('Product 1', 19.99, 'quantity1')">Add to Cart</button>
             </div>
-            <div class="navigation-button">
-                <button onclick="changeSlide(-1)">Previous</button>
-                <button onclick="changeSlide(1)">Next</button>
+
+            <div class="product" id="product2">
+                <img src="./img/coffe2.png" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$29.99</p>
+                <label for="quantity2">Quantity:</label>
+                <input type="number" id="quantity2" value="1" min="1">
+                <button onclick="addToCart('Product 2', 29.99, 'quantity2')">Add to Cart</button>
             </div>
-        </section>
-        </section>
+
+            <div class="product" id="product2">
+                <img src="./img/coffe3.png" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>$29.99</p>
+                <label for="quantity3">Quantity:</label>
+                <input type="number" id="quantity3" value="1" min="1">
+                <button onclick="addToCart('Product 3', 29.99, 'quantity3')">Add to Cart</button>
+            </div>
+
+            <div class="product" id="product4">
+                <img src="./img/coffe4.jpg" alt="Product 4">
+                <h3>Product 4</h3>
+                <p>$29.99</p>
+                <label for="quantity4">Quantity:</label>
+                <input type="number" id="quantity4" value="1" min="1">
+                <button onclick="addToCart('Product 4', 29.99, 'quantity4')">Add to Cart</button>
+            </div>
+
+            <div class="product" id="product5">
+                <img src="./img/coffe5.jpg" alt="Product 5">
+                <h3>Product 5</h3>
+                <p>$29.99</p>
+                <label for="quantity5">Quantity:</label>
+                <input type="number" id="quantity5" value="1" min="1">
+                <button onclick="addToCart('Product 5', 29.99, 'quantity5')">Add to Cart</button>
+            </div>
+
+            <div class="product" id="product6">
+                <img src="./img/coffe6.png" alt="Product 6">
+                <h3>Product 6</h3>
+                <p>$29.99</p>
+                <label for="quantity6">Quantity:</label>
+                <input type="number" id="quantity6" value="1" min="1">
+                <button onclick="addToCart('Product 6', 29.99, 'quantity6')">Add to Cart</button>
+            </div>
+
+            <div class="product" id="product7">
+                <img src="./img/coffe2.png" alt="Product 7">
+                <h3>Product 7</h3>
+                <p>$29.99</p>
+                <label for="quantity7">Quantity:</label>
+                <input type="number" id="quantity7" value="1" min="1">
+                <button onclick="addToCart('Product 7', 29.99, 'quantity7')">Add to Cart</button>
+            </div>
+
+            <div class="product" id="product8">
+                <img src="./img/coffe8.jpg" alt="Product 8">
+                <h3>Product 8</h3>
+                <p>$29.99</p>
+                <label for="quantity8">Quantity:</label>
+                <input type="number" id="quantity8" value="1" min="1">
+                <button onclick="addToCart('Product 8', 29.99, 'quantity8')">Add to Cart</button>
+            </div>
+
+            <div class="product" id="product9">
+                <img src="./img/coffe9.jpg" alt="Product 9">
+                <h3>Product 9</h3>
+                <p>$29.99</p>
+                <label for="quantity9">Quantity:</label>
+                <input type="number" id="quantity9" value="1" min="1">
+                <button onclick="addToCart('Product 9', 29.99, 'quantity9')">Add to Cart</button>
+            </div>
+
+            <div class="product" id="product10">
+                <img src="./img/coffe10.jpg" alt="Product 10">
+                <h3>Product 10</h3>
+                <p>$29.99</p>
+                <label for="quantity10">Quantity:</label>
+                <input type="number" id="quantity10" value="1" min="1">
+                <button onclick="addToCart('Product 10', 29.99, 'quantity10')">Add to Cart</button>
+            </div>
+
+            <button onclick="showPrev()">Previous</button>
+            <button onclick="showNext()">Next</button>
+        </div>
 
         <!-- About Page -->
-        <section>
+        <section class="container20">
             <h1>About Coffee4You</h1>
             <p>Coffee4You is a haven for coffee enthusiasts, bringing the finest coffee beans from various countries.
                 Our mission is to provide an immersive coffee experience like no other.</p>
@@ -67,7 +146,7 @@
         </section>
 
         <!-- Product Page -->
-        <section>
+        <section class="container20">
             <h1>Explore Global Flavors</h1>
             <p>Indulge in the rich and unique flavors of coffees sourced from diverse regions. Each cup tells a story of
                 craftsmanship and passion.</p>
@@ -75,7 +154,7 @@
         </section>
 
         <!-- Contact Page -->
-        <section>
+        <section class="container20">
             <h1>Contact Coffee4You</h1>
             <p>Reach out to us for inquiries, recommendations, or to share your coffee experiences. We'd love to connect
                 with fellow coffee lovers!</p>

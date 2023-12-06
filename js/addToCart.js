@@ -1,39 +1,34 @@
-var imgs = document.querySelectorAll('.slider img');
-var currentImg = 0; // index of the first image
-const interval = 2000; // duration(speed) of the slide
-var timer;
+var currentProductIndex = 0;
+var products = document.querySelectorAll('.product');
 
-// Change the Images Automatically
-function autoNextSlide() {
-    currentImg = (currentImg + 1) % imgs.length;
-    changeSlide(1);
-}
-
-// Add event listeners to buttons for manual navigation
-function changeSlide(direction) {
-    clearInterval(timer);
-
-    currentImg = (currentImg + direction + imgs.length) % imgs.length;
-
-    for (var i = 0; i < imgs.length; i++) {
-        imgs[i].style.opacity = 0;
+function showProduct(index) {
+    for (var i = 0; i < products.length; i++) {
+        products[i].style.display = 'none';
     }
-
-    imgs[currentImg].style.opacity = 1;
-
-    // Set a new interval after manual navigation
-    timer = setInterval(autoNextSlide, interval);
+    products[index].style.display = 'block';
 }
 
-// Add event listener to automatically change images every 3 seconds
-var sliderContainer = document.querySelector('.slider');
-sliderContainer.addEventListener('mouseenter', function () {
-    clearInterval(timer);
-});
+function showNext() {
+    currentProductIndex = (currentProductIndex + 1) % products.length;
+    showProduct(currentProductIndex);
+}
 
-sliderContainer.addEventListener('mouseleave', function () {
-    timer = setInterval(autoNextSlide, interval);
-});
+function showPrev() {
+    currentProductIndex = (currentProductIndex - 1 + products.length) % products.length;
+    showProduct(currentProductIndex);
+}
 
-// Start the automatic slide change
-timer = setInterval(autoNextSlide, interval);
+function addToCart(productName, price, quantityId) {
+    var quantity = document.getElementById(quantityId).value;
+    var totalPrice = price * quantity;
+
+    // Here you can implement the logic to add the product to the cart
+    // For simplicity, we'll just log the details to the console
+    console.log('Product added to cart:');
+    console.log('Product Name:', productName);
+    console.log('Quantity:', quantity);
+    console.log('Total Price:', totalPrice);
+}
+
+// Show the first product initially
+showProduct(currentProductIndex);
