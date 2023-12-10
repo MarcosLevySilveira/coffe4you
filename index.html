@@ -18,6 +18,7 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="products.html">Products</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
             </ul>
         </nav>
         <div>
@@ -61,13 +62,13 @@
                 <button onclick="addToCart('Product 2', 29.99, 'quantity2')">Add to Cart</button>
             </div>
 
-            <div class="product" id="product2">
+            <div class="product" id="product3">
                 <img src="./img/coffe3.png" alt="Product 3">
                 <h3>Product 3</h3>
                 <p>$29.99</p>
                 <label for="quantity3">Quantity:</label>
                 <input type="number" id="quantity3" value="1" min="1">
-                <button onclick="addToCart('Product 3', 29.99, 'quantity3')">Add to Cart</button>
+                <button onclick="addToCart('Product 3', 39.99, 'quantity3')">Add to Cart</button>
             </div>
 
             <div class="product" id="product4">
@@ -76,7 +77,7 @@
                 <p>$29.99</p>
                 <label for="quantity4">Quantity:</label>
                 <input type="number" id="quantity4" value="1" min="1">
-                <button onclick="addToCart('Product 4', 29.99, 'quantity4')">Add to Cart</button>
+                <button onclick="addToCart('Product 4', 49.99, 'quantity4')">Add to Cart</button>
             </div>
 
             <div class="product" id="product5">
@@ -85,7 +86,7 @@
                 <p>$29.99</p>
                 <label for="quantity5">Quantity:</label>
                 <input type="number" id="quantity5" value="1" min="1">
-                <button onclick="addToCart('Product 5', 29.99, 'quantity5')">Add to Cart</button>
+                <button onclick="addToCart('Product 5', 59.99, 'quantity5')">Add to Cart</button>
             </div>
 
             <div class="product" id="product6">
@@ -137,6 +138,7 @@
             <button onclick="showNext()">Next</button>
         </div>
 
+    </section>
         <!-- Product Page -->
 
         <section class="container20-testimonials">
@@ -229,7 +231,13 @@
             Phone: (555) 123-4567 | Email: info@coffee4you.com
         </address>
     </footer>
-    <script src="./js/addToCart.js"></script>
+    <div id="confirmation-message" class="confirmation-message">
+        The product has been added to your cart!
+    </div>
+    <script src="./js/showProducts.js"></script>
+    <script src="./js/addToChart.js"></script>
+    <script src="./js/checkout.js"></script>
+    <script src="./js/productNavigation.js"></script>
 </body>
 
 </html>
