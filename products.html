@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/products.css">
+    <title>Coffee4You - Your Global Coffee Destination</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="checkout.html">Checkout</a></li>
+            </ul>
+        </nav>
+        <div>
+            <img src="./img/logo.png" alt="Coffee4You Logo" id="logo">
+        </div>
+    </header>
+
+    <!-- Container for the rest of the content -->
+    <div class="content-container-products">
+
+
+        <div id="product-container-page">
+            <div class="product" id="product1">
+                <img src="./img/coffe1.png" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$19.99</p>
+                <label for="quantity1">Quantity:</label>
+                <input type="number" id="quantity1" value="1" min="1">
+                <button onclick="addToCart('Product 1', 19.99, 'quantity1')">Add to Cart</button>
+            </div>
+
+            <div class="product" id="product2">
+                <img src="./img/coffe2.png" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$29.99</p>
+                <label for="quantity2">Quantity:</label>
+                <input type="number" id="quantity2" value="1" min="1">
+                <button onclick="addToCart('Product 2', 29.99, 'quantity2')">Add to Cart</button>
+            </div>
+
+            <div class="product" id="product3">
+                <img src="./img/coffe3.png" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>$29.99</p>
+                <label for="quantity3">Quantity:</label>
+                <input type="number" id="quantity3" value="1" min="1">
+                <button onclick="addToCart('Product 3', 39.99, 'quantity3')">Add to Cart</button>
+            </div>
+
+            <div class="product" id="product4">
+                <img src="./img/coffe4.jpg" alt="Product 4">
+                <h3>Product 4</h3>
+                <p>$29.99</p>
+                <label for="quantity4">Quantity:</label>
+                <input type="number" id="quantity4" value="1" min="1">
+                <button onclick="addToCart('Product 4', 49.99, 'quantity4')">Add to Cart</button>
+            </div>
+
+            <div class="product" id="product5">
+                <img src="./img/coffe5.jpg" alt="Product 5">
+                <h3>Product 5</h3>
+                <p>$29.99</p>
+                <label for="quantity5">Quantity:</label>
+                <input type="number" id="quantity5" value="1" min="1">
+                <button onclick="addToCart('Product 5', 59.99, 'quantity5')">Add to Cart</button>
+            </div>
+
+            <div class="product" id="product6">
+                <img src="./img/coffe6.png" alt="Product 6">
+                <h3>Product 6</h3>
+                <p>$29.99</p>
+                <label for="quantity6">Quantity:</label>
+                <input type="number" id="quantity6" value="1" min="1">
+                <button onclick="addToCart('Product 6', 29.99, 'quantity6')">Add to Cart</button>
+            </div>
+
+            <div class="product" id="product7">
+                <img src="./img/coffe2.png" alt="Product 7">
+                <h3>Product 7</h3>
+                <p>$29.99</p>
+                <label for="quantity7">Quantity:</label>
+                <input type="number" id="quantity7" value="1" min="1">
+                <button onclick="addToCart('Product 7', 29.99, 'quantity7')">Add to Cart</button>
+            </div>
+
+            <div class="product" id="product8">
+                <img src="./img/coffe8.jpg" alt="Product 8">
+                <h3>Product 8</h3>
+                <p>$29.99</p>
+                <label for="quantity8">Quantity:</label>
+                <input type="number" id="quantity8" value="1" min="1">
+                <button onclick="addToCart('Product 8', 29.99, 'quantity8')">Add to Cart</button>
+            </div>
+
+            <div class="product" id="product9">
+                <img src="./img/coffe9.jpg" alt="Product 9">
+                <h3>Product 9</h3>
+                <p>$29.99</p>
+                <label for="quantity9">Quantity:</label>
+                <input type="number" id="quantity9" value="1" min="1">
+                <button onclick="addToCart('Product 9', 29.99, 'quantity9')">Add to Cart</button>
+            </div>
+
+            <div class="product" id="product10">
+                <img src="./img/coffe10.jpg" alt="Product 10">
+                <h3>Product 10</h3>
+                <p>$29.99</p>
+                <label for="quantity10">Quantity:</label>
+                <input type="number" id="quantity10" value="1" min="1">
+                <button onclick="addToCart('Product 10', 29.99, 'quantity10')">Add to Cart</button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Coffee4You. All rights reserved.</p>
+        <address>
+            Coffee4You, 123 Global Brew Avenue, Bean City, Roastland, 98765<br>
+            Phone: (555) 123-4567 | Email: info@coffee4you.com
+        </address>
+    </footer>
+    <div id="confirmation-message" class="confirmation-message">
+        The product has been added to your cart!
+    </div>
+
+</body>
+
+</html>

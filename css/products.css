@@ -1,0 +1,91 @@
+/* styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #8B4513;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div {
+    display: inline-block;
+    max-height: 90vh;
+    margin-left: 0;
+}
+
+header img {
+    max-width: 30%;
+    height: auto;
+}
+
+nav {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#product-container-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px; /* Added padding for better spacing */
+}
+
+.product {
+    width: 20%; /* Reduced width to fit better */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 15px; /* Added padding for better spacing */
+    text-align: center; /* Centered text */
+    border-radius: 10px; /* Added rounded corners */
+}
+
+.product img {
+    max-width: 20%; /* Centered and resized images */
+    height: auto;
+}
+
+.product button {
+    background-color: #4CAF50; /* Green button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Added rounded corners to the button */
+    cursor: pointer;
+}
+
+/* Ajuste para telas maiores se necessário */
+@media (min-width: 768px) {
+    .product {
+        width: 20%; /* Ajuste conforme necessário */
+    }
+}
