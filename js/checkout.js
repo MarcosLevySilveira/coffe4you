@@ -1,4 +1,3 @@
-// checkout.js
 // Function to add a product to the cart
 function addToCart(productName, price, quantityId) {
     // Get the quantity from the input field

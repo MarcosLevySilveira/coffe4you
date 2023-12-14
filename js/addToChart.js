@@ -1,4 +1,3 @@
-// addToCart.js
 
 function addToCart(productName, price, quantity) {
     // Get the quantity value from the input field

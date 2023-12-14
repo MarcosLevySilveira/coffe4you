@@ -1,3 +1,25 @@
+/* Font-face rules */
+@font-face {
+    font-family: 'CustomFont1';
+    src: url(../fonts/coffee_mocca/CoffeeMocca-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CustomFont2';
+    src: url(../fonts/jmh_typewriter/JMHTypewriter.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CustomFont3';
+    src: url(../fonts/afternoon_coffee/Afternoon-Coffee-free.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -50,6 +72,7 @@ nav a {
     color: #fff;
     font-weight: bold;
     font-size: 18px;
+    font-family: 'CustomFont2', sans-serif;
 }
 
 
@@ -123,4 +146,67 @@ footer {
     width: 100%;
     box-sizing: border-box;
     margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    header img {
+        max-width: 100%;
+        border-radius: 0; 
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .contact-info div {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Font-face rules */
+@font-face {
+    font-family: 'CustomFont1';
+    src: url(../fonts/coffee_mocca/CoffeeMocca-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CustomFont2';
+    src: url(../fonts/jmh_typewriter/JMHTypewriter.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CustomFont3';
+    src: url(../fonts/afternoon_coffee/Afternoon-Coffee-free.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1 {
+    font-family: 'CustomFont1', sans-serif;
+    font-size: 2rem;
+}
+
+h2 {
+    font-family: 'CustomFont2', sans-serif;
+
+}
+
+p {
+    font-family: 'CustomFont3', sans-serif;
+    font-size: 1.2rem;
 }

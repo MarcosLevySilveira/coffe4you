@@ -22,8 +22,6 @@ function addToCart(productName, price, quantityId) {
     var quantity = document.getElementById(quantityId).value;
     var totalPrice = price * quantity;
 
-    // Here you can implement the logic to add the product to the cart
-    // For simplicity, we'll just log the details to the console
     console.log('Product added to cart:');
     console.log('Product Name:', productName);
     console.log('Quantity:', quantity);

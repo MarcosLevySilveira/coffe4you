@@ -1,4 +1,3 @@
-// summary.js
 
 document.addEventListener('DOMContentLoaded', function () {
     // Call a function to display the order summary

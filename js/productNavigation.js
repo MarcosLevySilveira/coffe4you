@@ -1,4 +1,3 @@
-// productNavigation.js
 
 var currentProductIndex = 0;
 var products = document.querySelectorAll('.product');
